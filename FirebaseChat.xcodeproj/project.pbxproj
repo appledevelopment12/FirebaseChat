@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D43B284F2752D64E7DE0B2D8 /* Pods_FirebaseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B3C038758BBE7DAEFD9309 /* Pods_FirebaseChat.framework */; };
+		F9147E072EDC70360092A84E /* ImageMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9147E052EDC70360092A84E /* ImageMessageCell.swift */; };
+		F9147E082EDC70360092A84E /* ImageMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9147E062EDC70360092A84E /* ImageMessageCell.xib */; };
+		F9147E1A2EDD68C30092A84E /* MixedMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9147E192EDD68C30092A84E /* MixedMessageCell.swift */; };
+		F9147E1D2EDD75B70092A84E /* MixedReplyMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9147E1C2EDD75B70092A84E /* MixedReplyMessageCell.xib */; };
+		F9147E1E2EDD75B70092A84E /* MixedReplyMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9147E1B2EDD75B70092A84E /* MixedReplyMessageCell.swift */; };
 		F9C39B232EDB137C00278284 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9C39B112EDB137C00278284 /* UserCell.xib */; };
 		F9C39B242EDB137C00278284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C39B1B2EDB137C00278284 /* Assets.xcassets */; };
 		F9C39B262EDB137C00278284 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C39B1E2EDB137C00278284 /* LaunchScreen.storyboard */; };
@@ -33,6 +38,11 @@
 		32B3C038758BBE7DAEFD9309 /* Pods_FirebaseChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42A847F918747638C9499607 /* Pods-FirebaseChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChat.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat.debug.xcconfig"; sourceTree = "<group>"; };
 		7D71E5E8CB7C3EDBFC28BF74 /* Pods-FirebaseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChat.release.xcconfig"; path = "Target Support Files/Pods-FirebaseChat/Pods-FirebaseChat.release.xcconfig"; sourceTree = "<group>"; };
+		F9147E052EDC70360092A84E /* ImageMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMessageCell.swift; sourceTree = "<group>"; };
+		F9147E062EDC70360092A84E /* ImageMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageMessageCell.xib; sourceTree = "<group>"; };
+		F9147E192EDD68C30092A84E /* MixedMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedMessageCell.swift; sourceTree = "<group>"; };
+		F9147E1B2EDD75B70092A84E /* MixedReplyMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedReplyMessageCell.swift; sourceTree = "<group>"; };
+		F9147E1C2EDD75B70092A84E /* MixedReplyMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MixedReplyMessageCell.xib; sourceTree = "<group>"; };
 		F9C39AD62EDB0A7600278284 /* FirebaseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C39B102EDB137C00278284 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		F9C39B112EDB137C00278284 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
@@ -110,6 +120,11 @@
 				F9C39B112EDB137C00278284 /* UserCell.xib */,
 				F9F7EC652EDB5EE100E2A87F /* ChatCell.swift */,
 				F9F7EC662EDB5EE100E2A87F /* ChatCell.xib */,
+				F9147E052EDC70360092A84E /* ImageMessageCell.swift */,
+				F9147E062EDC70360092A84E /* ImageMessageCell.xib */,
+				F9147E192EDD68C30092A84E /* MixedMessageCell.swift */,
+				F9147E1B2EDD75B70092A84E /* MixedReplyMessageCell.swift */,
+				F9147E1C2EDD75B70092A84E /* MixedReplyMessageCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -222,7 +237,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9147E082EDC70360092A84E /* ImageMessageCell.xib in Resources */,
 				F9C39B232EDB137C00278284 /* UserCell.xib in Resources */,
+				F9147E1D2EDD75B70092A84E /* MixedReplyMessageCell.xib in Resources */,
 				F9F7EC682EDB5EE100E2A87F /* ChatCell.xib in Resources */,
 				F9C39B242EDB137C00278284 /* Assets.xcassets in Resources */,
 				F9C39B322EDB15B700278284 /* GoogleService-Info.plist in Resources */,
@@ -283,7 +300,9 @@
 				F9C39B282EDB137C00278284 /* UserCell.swift in Sources */,
 				F9F7EC642EDB5DDC00E2A87F /* ChatScreen.swift in Sources */,
 				F9F7EC672EDB5EE100E2A87F /* ChatCell.swift in Sources */,
+				F9147E072EDC70360092A84E /* ImageMessageCell.swift in Sources */,
 				F9C39B292EDB137C00278284 /* SignupVC.swift in Sources */,
+				F9147E1A2EDD68C30092A84E /* MixedMessageCell.swift in Sources */,
 				F9F7EC622EDB5AA300E2A87F /* saveuser.swift in Sources */,
 				F9F7EC582EDB59D400E2A87F /* UserModel.swift in Sources */,
 				F9F7EC6E2EDB660500E2A87F /* placeholderTextView.swift in Sources */,
@@ -292,6 +311,7 @@
 				F9C39B2B2EDB137C00278284 /* Designable.swift in Sources */,
 				F9C39B2C2EDB137C00278284 /* ViewExtension.swift in Sources */,
 				F9C39B2D2EDB137C00278284 /* AppDelegate.swift in Sources */,
+				F9147E1E2EDD75B70092A84E /* MixedReplyMessageCell.swift in Sources */,
 				F9C39B2E2EDB137C00278284 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

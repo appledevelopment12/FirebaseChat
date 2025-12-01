@@ -68,6 +68,9 @@ class UserListVC: UIViewController {
         userListTable.dataSource = self
         userListTable.separatorStyle = .none
         userListTable.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")
+        
+        
+
     }
 }
 extension UserListVC: UITableViewDelegate, UITableViewDataSource {
@@ -86,6 +89,7 @@ extension UserListVC: UITableViewDelegate, UITableViewDataSource {
                                  placeholderImage: UIImage(named: "placeholder"))
         cell.selectionStyle = .none
         return cell
+       
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 

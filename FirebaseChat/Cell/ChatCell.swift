@@ -18,8 +18,18 @@ class ChatCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        leftBubbleView.layer.cornerRadius = 15
-        rightBubbleView.layer.cornerRadius = 15
+                leftBubbleView.layer.cornerRadius = 12
+                rightBubbleView.layer.cornerRadius = 12
+
+                // WhatsApp style background colors
+                leftBubbleView.backgroundColor = UIColor(white: 0.92, alpha: 1)      // Light gray
+                //rightBubbleView.backgroundColor = UIColor(red: 0.20, green: 0.74, blue: 0.32, alpha: 1) // WhatsApp green
+                
+                leftBubbleView.clipsToBounds = true
+                rightBubbleView.clipsToBounds = true
+                
+                leftMessageLabel.numberOfLines = 0
+                rightMessageLabel.numberOfLines = 0
     }
     func configure(message: Message, currentUserId: String) {
             
