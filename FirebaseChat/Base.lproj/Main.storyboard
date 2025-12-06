@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S7n-Al-y4k">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -148,7 +149,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="backa"/>
                                         <connections>
-                                            <action selector="backBtn:" destination="qFn-Gn-1dH" eventType="touchUpInside" id="i3P-0C-VCy"/>
+                                            <action selector="backBtn:" destination="qFn-Gn-1dH" eventType="touchUpInside" id="uLX-jz-CLX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -229,7 +230,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="profile"/>
                                         <connections>
-                                            <action selector="galleryActionBtn:" destination="qFn-Gn-1dH" eventType="touchUpInside" id="g7h-Vo-YhS"/>
+                                            <action selector="SendImage:" destination="qFn-Gn-1dH" eventType="touchUpInside" id="vKw-pi-alm"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTf-Jc-6GJ">
@@ -254,9 +255,9 @@
                                                 </constraints>
                                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="cross" catalog="system"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="cross"/>
                                                 <connections>
-                                                    <action selector="closeReply:" destination="qFn-Gn-1dH" eventType="touchUpInside" id="xt7-0c-Pr1"/>
+                                                    <action selector="closeReply:" destination="qFn-Gn-1dH" eventType="touchUpInside" id="9Ec-rR-bal"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnu-QC-ckf">
@@ -361,18 +362,17 @@
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="BottomViewBottomConstraint" destination="WTT-su-EO7" id="PMf-YG-XuJ"/>
+                        <outlet property="bottomViewBottomConstraint" destination="WTT-su-EO7" id="X6S-yA-V4N"/>
                         <outlet property="chatTableView" destination="Wxj-ES-qJs" id="2Vi-n2-KDr"/>
-                        <outlet property="replyPreviewCloseBtn" destination="WQd-aT-t6g" id="Ghm-1g-Vh4"/>
-                        <outlet property="replyPreviewMessageLabel" destination="F3G-23-uZS" id="vlk-OX-po9"/>
-                        <outlet property="replyPreviewSenderLabel" destination="bnu-QC-ckf" id="14D-a6-n7T"/>
-                        <outlet property="replyPreviewView" destination="LTf-Jc-6GJ" id="S86-YI-vME"/>
-                        <outlet property="replyPreviewViewConstraint" destination="nOv-Gb-zew" id="ICU-sh-4PX"/>
-                        <outlet property="replyPreviewimage" destination="1tf-wg-Lxr" id="QmG-hW-YtA"/>
+                        <outlet property="namelbl" destination="ckW-68-6yV" id="4VG-wg-vQ5"/>
+                        <outlet property="replyImagePreview" destination="1tf-wg-Lxr" id="6pj-QM-w8W"/>
+                        <outlet property="replyMessageLabel" destination="F3G-23-uZS" id="NPl-69-zJr"/>
+                        <outlet property="replyPreviewContainer" destination="LTf-Jc-6GJ" id="fFc-I2-bYF"/>
+                        <outlet property="replyPreviewHeightConstraint" destination="nOv-Gb-zew" id="f61-HU-zuN"/>
+                        <outlet property="replySenderLabel" destination="bnu-QC-ckf" id="n7N-Y5-45D"/>
                         <outlet property="sendButton" destination="HMM-hu-vYZ" id="SUU-RI-MMp"/>
+                        <outlet property="textView" destination="BeK-xd-czr" id="bPn-9R-LMx"/>
                         <outlet property="textViewHeightConstraint" destination="R1T-aw-9A3" id="n5l-Jw-p4D"/>
-                        <outlet property="textview" destination="BeK-xd-czr" id="jdX-1v-UxI"/>
-                        <outlet property="userName" destination="ckW-68-6yV" id="s8p-XQ-itk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjO-7F-WA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -402,7 +402,7 @@
         <image name="Send" width="24" height="24"/>
         <image name="Send 1" width="40" height="37"/>
         <image name="backa" width="29.5" height="28.5"/>
-        <image name="cross" catalog="system" width="128" height="116"/>
+        <image name="cross" width="50" height="50"/>
         <image name="profile" width="23" height="23"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -411,10 +411,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

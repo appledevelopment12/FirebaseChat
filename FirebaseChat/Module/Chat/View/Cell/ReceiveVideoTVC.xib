@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceiveVideoTVC" rowHeight="321" id="KGk-i7-Jjw" customClass="ReceiveVideoTVC" customModule="FirebaseChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="321"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="312" height="321"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KWp-aY-8hE">
+                        <rect key="frame" x="10" y="10" width="292" height="301"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="62D-Qh-vM5">
+                                <rect key="frame" x="5" y="10" width="282" height="281"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9Y-1G-apa">
+                                <rect key="frame" x="126" y="130.66666666666666" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Fmr-0A-al5"/>
+                                    <constraint firstAttribute="height" constant="40" id="igY-l9-fVd"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.square.stack.fill" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusBtn">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJN-di-htj">
+                                <rect key="frame" x="11.999999999999998" y="270.66666666666669" width="24.333333333333329" height="14.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="292" id="BfP-1Y-qgQ"/>
+                            <constraint firstAttribute="bottom" secondItem="iJN-di-htj" secondAttribute="bottom" constant="16" id="Cg1-QS-4Dp"/>
+                            <constraint firstItem="62D-Qh-vM5" firstAttribute="top" secondItem="KWp-aY-8hE" secondAttribute="top" constant="10" id="Cjk-6T-csK"/>
+                            <constraint firstAttribute="height" constant="301" id="MhL-H8-0V1"/>
+                            <constraint firstAttribute="bottom" secondItem="62D-Qh-vM5" secondAttribute="bottom" constant="10" id="ZES-pV-dYt"/>
+                            <constraint firstAttribute="trailing" secondItem="62D-Qh-vM5" secondAttribute="trailing" constant="5" id="odj-iE-D1i"/>
+                            <constraint firstItem="t9Y-1G-apa" firstAttribute="centerX" secondItem="KWp-aY-8hE" secondAttribute="centerX" id="qgX-pY-0KK"/>
+                            <constraint firstItem="62D-Qh-vM5" firstAttribute="leading" secondItem="KWp-aY-8hE" secondAttribute="leading" constant="5" id="rFo-3H-epb"/>
+                            <constraint firstItem="t9Y-1G-apa" firstAttribute="centerY" secondItem="KWp-aY-8hE" secondAttribute="centerY" id="sA4-d7-KvQ"/>
+                            <constraint firstItem="iJN-di-htj" firstAttribute="leading" secondItem="KWp-aY-8hE" secondAttribute="leading" constant="12" id="vup-YA-SrH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KWp-aY-8hE" secondAttribute="bottom" constant="10" id="Il2-eC-Efw"/>
+                    <constraint firstItem="KWp-aY-8hE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Pxi-9u-rvH"/>
+                    <constraint firstItem="KWp-aY-8hE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="mFI-k6-hJC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="playButton" destination="t9Y-1G-apa" id="7jS-gO-qYc"/>
+                <outlet property="thumbnailImageView" destination="62D-Qh-vM5" id="a1H-2N-9If"/>
+                <outlet property="timeLabel" destination="iJN-di-htj" id="eO7-Kb-7KI"/>
+            </connections>
+            <point key="canvasLocation" x="-47.328244274809158" y="116.54929577464789"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play.square.stack.fill" catalog="system" width="105" height="128"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
